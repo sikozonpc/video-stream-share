@@ -1,7 +1,9 @@
 <template>
-  <div id="nav">
-    <SideMenu />
-    <router-view />
+  <div class="flex">
+    <SideMenu class="mr-6 h-screen" />
+    <div class="flex flex-1 max-h-screen w-full text bg-secondary">
+      <router-view />
+    </div>
   </div>
 </template>
 
