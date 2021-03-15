@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import SvgIcon from "@/components/SvgIcon.vue";
+import SvgIcon from "@/components/svg-icon/SvgIcon.vue";
 import props from "./VideoProviderIcon.types";
 
 export default {
@@ -37,6 +37,3 @@ export default {
   components: { SvgIcon },
 };
 </script>
-
-<style>
-</style>

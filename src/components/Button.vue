@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SvgIcon, { svgIconBaseProps } from "@/components/SvgIcon.vue";
+import SvgIcon, { svgIconBaseProps } from "@/components/svg-icon/SvgIcon.vue";
 export default {
   name: "Button",
   components: { SvgIcon },

@@ -11,7 +11,7 @@ export interface Store {
 
 export default new Vuex.Store<Store>({
   state: {
-    feed: feedMock
+    feed: feedMock,
   },
   mutations: {
   },

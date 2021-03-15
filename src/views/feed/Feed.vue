@@ -1,6 +1,8 @@
 <template>
   <div>
-    <header class="flex flex-col items-start justify-start text-left mt-6 ml-6">
+    <header
+      class="flex flex-col items-start justify-start text-left mt-2 ml-6 sticky top-0 py-2 pt-4 bg-secondary w-full border-secondary"
+    >
       <h1 class="font-bold text-2xl">Feed</h1>
       <span class="text-secondary"
         >Find and join a room to watch videos with other people or create one to
@@ -9,14 +11,7 @@
     </header>
 
     <div class="mt-14">
-      <RoomTile
-        v-for="f in feed"
-        :key="f.id"
-        :title="f.title"
-        :description="f.description"
-        :provider="f.provider"
-        :roomID="f.id"
-      />
+      <RoomTile v-for="f in feed" :key="f.id" :feedItem="f" />
     </div>
   </div>
 </template>

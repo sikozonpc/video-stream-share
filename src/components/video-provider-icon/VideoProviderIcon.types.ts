@@ -1,3 +1,5 @@
+import { PropType } from "vue";
+
 export enum VideoProviders {
   YOUTUBE = "youtube",
   TWITCH = "twitch",
@@ -7,8 +9,7 @@ export enum VideoProviders {
 
 export default {
   provider: {
-    type: String,
+    type: String as PropType<VideoProviders>,
     required: true,
-    validator: (value: string) => Object.values(VideoProviders).includes(value as VideoProviders),
   },
 };

@@ -3,8 +3,8 @@
     <div class="flex flex-col">
       <ul class="flex flex-col p-2 h-full">
         <RouterLink to="/" icon="home" color="gray" class="mb-2"
-          >Feed</RouterLink
-        >
+          >Feed
+        </RouterLink>
         <RouterLink
           class="mb-2"
           to="/categories"
