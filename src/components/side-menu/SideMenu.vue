@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import RouterLink from "@/components/RouterLink.vue";
+import { RouterLink } from "@/components/router-link";
 
 export default {
   name: "SideMenu",

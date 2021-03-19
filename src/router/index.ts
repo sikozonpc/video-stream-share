@@ -17,13 +17,13 @@ const routes: Array<RouteConfig> = [
     path: '/categories',
     name: 'Categories',
     sidebar: true,
-    component: () => import('../views/Categories.vue')
+    component: () => import('../views/categories/Categories.vue')
   },
   {
     path: '/profile',
     name: 'Profile',
     sidebar: true,
-    component: () => import('../views/Profile.vue')
+    component: () => import('../views/profile/Profile.vue')
   },
   {
     path: '/r/:id',

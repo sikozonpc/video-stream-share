@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import RouterLink from "@/components/RouterLink.vue";
+import { RouterLink } from "@/components/router-link";
 import { ViewContainer } from "@/components/view-container";
 import { FeedItem } from "../feed/Feed.types";
 

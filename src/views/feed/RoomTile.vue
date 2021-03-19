@@ -27,9 +27,9 @@
 
 <script lang="ts">
 import { PropType } from "vue";
-import Button from "@/components/Button.vue";
+import { Button } from "@/components/button";
 import VideoProviderIcon from "@/components/video-provider-icon/VideoProviderIcon.vue";
-import RouterLink from "@/components/RouterLink.vue";
+import { RouterLink } from "@/components/router-link";
 import { FeedItem } from "./Feed.types";
 
 export default {

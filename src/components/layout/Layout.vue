@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import SideMenu from "@/components/SideMenu.vue";
+import { SideMenu } from "@/components/side-menu";
 import { hasSideBar } from "@/router";
 
 export default {
@@ -19,7 +19,7 @@ export default {
   components: { SideMenu },
   methods: {
     routeHasSidebar() {
-      const currPath = this.$route.path
+      const currPath = this.$route.path;
       return hasSideBar(currPath);
     },
   },

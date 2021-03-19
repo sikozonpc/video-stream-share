@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import Layout from "@/components/Layout.vue";
+import { Layout } from "@/components/layout";
 import darkMode from "@/utils/dark-mode";
 import { mapState } from "vuex";
 

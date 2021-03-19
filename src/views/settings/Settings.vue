@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import ToggleSwitch from "@/components/ToggleSwitch.vue";
+import { ToggleSwitch } from "@/components/toggle-switch";
 import { mapState } from "vuex";
 import { Store } from "@/store";
 import { capitalize } from "@/utils/strings";
