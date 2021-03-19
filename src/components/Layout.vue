@@ -1,18 +1,28 @@
 <template>
   <div class="flex">
-    <SideMenu class="mr-6 h-screen fixed top-0" />
-    <div class="flex flex-1 min-h-screen h-full w-full text bg-secondary ml-40">
+    <SideMenu v-if="routeHasSidebar()" class="mr-6 h-full w-40 fixed top-0" />
+    <div
+      class="flex flex-1 min-h-screen h-full w-full text bg-secondary"
+      :class="{ 'ml-40': routeHasSidebar() }"
+    >
       <router-view />
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import SideMenu from "@/components/SideMenu.vue";
+import { hasSideBar } from "@/router";
 
 export default {
   name: "Layout",
   components: { SideMenu },
+  methods: {
+    routeHasSidebar() {
+      const currPath = this.$route.path
+      return hasSideBar(currPath);
+    },
+  },
 };
 </script>
 

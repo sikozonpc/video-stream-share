@@ -13,9 +13,8 @@
   </svg>
 </template>
 
-<script lang="ts">
+<script>
 import iconPaths from "./iconPaths";
-import { IconPaths } from "./SvgIcon.types";
 
 export const svgIconBaseProps = {
   color: { type: String, default: "#333333" },
@@ -32,15 +31,15 @@ export default {
     icon: {
       type: String,
       required: true,
-      validator: (icon: string) => Object.keys(iconPaths).includes(icon),
+      validator: (icon) => Object.keys(iconPaths).includes(icon),
     },
     ...svgIconBaseProps,
   },
   computed: {
-    path(): string {
-      return iconPaths[this.icon as IconPaths];
+    path() {
+      return iconPaths[this.icon];
     },
-    ajustedViewBox(): string {
+    ajustedViewBox() {
       const vb = this.width || this.height;
       if (!vb) return this.viewBox;
 

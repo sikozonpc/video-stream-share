@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="m-6 text-left w-full dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-4 rounded shadow-sm cursor-pointer roomTile"
+    class="text-left w-full dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-4 rounded shadow-sm cursor-pointer roomTile"
     :to="`/r/${feedItem.id}`"
   >
     <div class="flex items-center w-full">

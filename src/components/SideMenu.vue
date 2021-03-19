@@ -27,6 +27,17 @@
         >
           Profile
         </RouterLink>
+        <RouterLink
+          class="mb-2"
+          to="/settings"
+          icon="settings"
+          color="gray"
+          viewBox="0 0 23 23"
+          width="23"
+          height="23"
+        >
+          Settings
+        </RouterLink>
       </ul>
     </div>
     <div class="flex flex-col"></div>
